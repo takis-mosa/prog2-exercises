@@ -26,5 +26,3 @@ pytest
 ```
 
 Kopieer de testen
-
-sn,bcnsbcsn,bdcns,dbcdns,dbc,sn
