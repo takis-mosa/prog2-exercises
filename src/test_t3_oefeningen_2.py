@@ -2,28 +2,28 @@ from t3_oefeningen_2 import Cirkel, is_even, pythagoras, stats, volume_bol, volu
 
 
 def test_is_even_1():
-    resultaat = is_even(1)
-    assert resultaat == False
+    result = is_even(1)
+    assert result == False
 
 
 def test_is_even_2():
-    resultaat = is_even(2)
-    assert resultaat == True
+    result = is_even(2)
+    assert result == True
 
 
 def test_is_even_3():
-    resultaat = is_even(3)
-    assert resultaat == False
+    result = is_even(3)
+    assert result == False
 
 
 def test_volume_bol_straal_1():
-    resultaat = volume_bol(1)
-    assert abs(resultaat - 4.1) < 0.1
+    result = volume_bol(1)
+    assert abs(result - 4.1) < 0.1
 
 
 def test_volume_bol_straal_16():
-    resultaat = volume_bol(16)
-    assert abs(resultaat - 17157.2) < 0.1
+    result = volume_bol(16)
+    assert abs(result - 17157.2) < 0.1
 
 
 def test_volume_donut_3_7():
@@ -46,15 +46,15 @@ def test_volume_donut_4_4():
 
 def test_stats_1():
     punten = [5]
-    resultaat = stats(punten)
-    assert resultaat == (5.0, 5, 5, 1)
+    result = stats(punten)
+    assert result == (5.0, 5, 5, 1)
 
 
 def test_stats_4():
     punten = [5, 9, 10, 8]
-    resultaat = stats(punten)
-    assert abs(resultaat[0] - 8.0) < 0.1
-    assert resultaat[1:] == (10, 5, 4)
+    result = stats(punten)
+    assert abs(result[0] - 8.0) < 0.1
+    assert result[1:] == (10, 5, 4)
 
 
 def test_stats_6():
