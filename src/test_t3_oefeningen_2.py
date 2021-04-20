@@ -3,17 +3,17 @@ from t3_oefeningen_2 import Cirkel, is_even, pythagoras, stats, volume_bol, volu
 
 def test_is_even_1():
     result = is_even(1)
-    assert result == False
+    assert result is False
 
 
 def test_is_even_2():
     result = is_even(2)
-    assert result == True
+    assert result is True
 
 
 def test_is_even_3():
     result = is_even(3)
-    assert result == False
+    assert result is False
 
 
 def test_volume_bol_straal_1():
