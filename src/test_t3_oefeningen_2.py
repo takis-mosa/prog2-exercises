@@ -158,6 +158,6 @@ def test_is_palindroom():
     assert result is True
 
 
-def test_is_palindroom():
+def test_is_geen_palindroom():
     result = is_palindroom("konijn")
     assert result is False
