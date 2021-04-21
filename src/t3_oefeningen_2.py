@@ -6,6 +6,12 @@ def is_even(x):
     return True
 
 
+def is_oneven(x):
+    """Geef True als x oneven is, anders False"""
+    # Implementeer deze functie gebruik makend van is_even
+    return True
+
+
 def volume_bol(r):
     """Return volume bol met straal r"""
     return 0
@@ -58,3 +64,9 @@ def pythagoras(a, b):
     """Return de lengte van de schuine zijde als de lengtes
     van de rechthoekszijden gegeven zijn door a en b"""
     return 0
+
+
+def is_palindroom(woord):
+    """Return True als het omgekeerde van het woord gelijk
+    is aan het woord zelf. Return anders False."""
+    return True

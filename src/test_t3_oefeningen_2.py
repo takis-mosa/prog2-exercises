@@ -1,4 +1,13 @@
-from t3_oefeningen_2 import Cirkel, is_even, pythagoras, stats, volume_bol, volume_donut
+from t3_oefeningen_2 import (
+    Cirkel,
+    is_even,
+    is_oneven,
+    pythagoras,
+    stats,
+    volume_bol,
+    volume_donut,
+    is_palindroom,
+)
 
 
 def test_is_even_1():
@@ -14,6 +23,21 @@ def test_is_even_2():
 def test_is_even_3():
     result = is_even(3)
     assert result is False
+
+
+def test_is_oneven_1():
+    result = is_oneven(1)
+    assert result is True
+
+
+def test_is_oneven_2():
+    result = is_oneven(2)
+    assert result is True
+
+
+def test_is_oneven_3():
+    result = is_oneven(3)
+    assert result is True
 
 
 def test_volume_bol_straal_1():
@@ -127,3 +151,13 @@ def test_pythagoros_ab_neg():
     expected = -1
 
     assert result == expected
+
+
+def test_is_palindroom():
+    result = is_palindroom("anna")
+    assert result is True
+
+
+def test_is_palindroom():
+    result = is_palindroom("konijn")
+    assert result is False
