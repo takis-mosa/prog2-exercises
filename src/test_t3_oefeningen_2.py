@@ -32,7 +32,7 @@ def test_is_oneven_1():
 
 def test_is_oneven_2():
     result = is_oneven(2)
-    assert result is True
+    assert result is False
 
 
 def test_is_oneven_3():
