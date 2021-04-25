@@ -71,14 +71,14 @@ def test_volume_donut_4_4():
 def test_stats_1():
     punten = [5]
     result = stats(punten)
-    assert result == (5.0, 5, 5, 1)
+    assert result == [5.0, 5, 5, 1]
 
 
 def test_stats_4():
     punten = [5, 9, 10, 8]
     result = stats(punten)
     assert abs(result[0] - 8.0) < 0.1
-    assert result[1:] == (10, 5, 4)
+    assert result[1:] == [10, 5, 4]
 
 
 def test_stats_6():
