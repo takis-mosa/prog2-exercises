@@ -2,11 +2,11 @@ from t3_oefeningen_2 import (
     Cirkel,
     is_even,
     is_oneven,
+    is_palindroom,
     pythagoras,
     stats,
     volume_bol,
     volume_donut,
-    is_palindroom,
 )
 
 
