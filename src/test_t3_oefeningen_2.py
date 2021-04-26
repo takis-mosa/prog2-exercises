@@ -90,17 +90,33 @@ def test_stats_6():
     assert nr == 6
 
 
-def test_cirkel_straal_4():
+def test_cirkel_straal_4_omtrek():
     x = Cirkel(4)
     assert abs(x.omtrek() - 25.13) < 0.1
+
+
+def test_cirkel_straal_4_oppervlakte():
+    x = Cirkel(4)
     assert abs(x.oppervlakte() - 50.27) < 0.1
+
+
+def test_cirkel_straal_4_str():
+    x = Cirkel(4)
     assert f"{x}" == "cirkel met straal 4"
 
 
-def test_cirkel_straal_5():
+def test_cirkel_straal_5_omtrek():
     x = Cirkel(5)
     assert abs(x.omtrek() - 31.42) < 0.1
+
+
+def test_cirkel_straal_5_oppervlakte():
+    x = Cirkel(5)
     assert abs(x.oppervlakte() - 78.54) < 0.1
+
+
+def test_cirkel_straal_5_str():
+    x = Cirkel(5)
     assert f"{x}" == "cirkel met straal 5"
 
 
